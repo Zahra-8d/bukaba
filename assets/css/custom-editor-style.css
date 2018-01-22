@@ -1,0 +1,18 @@
+/*
+Theme Name: bukaba
+Author: Zahra Ali
+Description: custom TinyMCE;
+Version: 0.0.1
+*/
+ 
+/*
+*** Import all the styles from the theme css so that the text editor reflects the theme 
+*/
+
+@import url('../../style.css');
+
+/* Adding max-width for full size web page */
+
+body {
+	max-width:1170px;
+}
