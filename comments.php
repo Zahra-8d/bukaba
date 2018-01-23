@@ -20,7 +20,8 @@ if(post_password_required()) {
 	/* Comments heading */
 	if(have_comments()) :
 		echo "<h3 class='comments-title'>";
-		printf(_x("Comments on &ldquo;%s&rdquo;", "comments-title", "bukaba"), get_the_title());
+		// translators: Comments on 'comments title'
+		printf(esc_html_x("Comments on &ldquo;%s&rdquo;", "comments-title", "bukaba"), get_the_title());
 		echo "</h3>";
 	?>
 

@@ -3,11 +3,10 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php esc_attr(bloginfo( 'charset' )); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<script src="https://use.fontawesome.com/a8ce4975ee.js"></script>
+	<link rel="pingback" href="<?php esc_url(bloginfo( 'pingback_url' )); ?>">
 
 	<?php wp_head(); ?>
 
@@ -57,8 +56,8 @@
 <!-- header styling -->
 	<div class="header" style="background-image:url(<?php esc_url(header_image()); ?>)">
   		<div class="heading">
-			<h1 class="site-title"><a href="<?php echo esc_url(site_url()); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
-			<p class="site-description"><?php echo get_bloginfo('description'); ?></p>
+			<h1 class="site-title"><a href="<?php echo esc_url(site_url()); ?>"><?php echo esc_html(get_bloginfo('name')); ?></a></h1>
+			<p class="site-description"><?php echo esc_html(get_bloginfo('description')); ?></p>
 		</div>
 	</div>
 

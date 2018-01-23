@@ -12,7 +12,7 @@ get_header();
 
 	<!-- header of the page -->
 	
-	<h1 class="page-title"><?php _e('Latest Posts', 'bukaba'); ?></h1>
+	<h1 class="page-title"><?php esc_html_e('Latest Posts', 'bukaba'); ?></h1>
 
 	<!-- page content -->
 	<div id="primary" class="content-area">
@@ -28,7 +28,7 @@ get_header();
 				));
 
 			else :
-				echo '<h2>' . _e('There are no posts to display', 'bukaba') . '</h2>';
+				echo '<h2>' . esc_html_e('There are no posts to display', 'bukaba') . '</h2>';
 
 			endif;
 			?>

@@ -20,7 +20,7 @@
 	<!--entry thumbnail -->
 	<?php if (has_post_thumbnail()) { ?>
 		<a href="<?php the_permalink('') ?>" title="<?php the_title_attribute(); ?>">
-			<?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive']); ?>			
+			<?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive'); ?>			
 		</a>
 	<?php
 	}
@@ -36,6 +36,7 @@
 	<div class="entry-footer">
 		<?php $tags_list = get_the_tag_list( '', esc_html__( ', ', 'bukaba' ) );
 		if ( $tags_list ) {
+			/* translators: list of post tags */
 			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'bukaba' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		} ?>
 	</div>
