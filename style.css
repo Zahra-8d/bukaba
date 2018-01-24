@@ -457,6 +457,10 @@ input:hover {
 	margin-bottom:5%;
 }
 
+#my-canvas {
+	transform: translate(-1%, 0%) rotate(-3deg);
+}
+
 
 /* media queries to make the site responsive */
 
@@ -474,7 +478,7 @@ input:hover {
 		padding:3px;
 	}
 	.down {
-		transform:translate(0, -140%);
+		transform:translate(0, 85%) !important;
 	}
 	.down .fa {
 		font-size:30px !important;
@@ -500,6 +504,12 @@ input:hover {
 	}
 	.page-numbers {
 		padding:0;
+	}
+	.heading {
+		top:65% !important;
+	}
+	#primary {
+		margin-top:15%;
 	}
 
 }
