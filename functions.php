@@ -162,7 +162,7 @@ Preconditions for this function are
 1. Front page is a static front page
 2. Home page template is the single-page-home.php page
 3 The menu location is 'primary' so no other navs are affected
-*/
+
 
 
 function bukaba_main_nav_menu_reroute($items, $args) {
@@ -183,7 +183,7 @@ function bukaba_main_nav_menu_reroute($items, $args) {
 	}
 }
 add_filter("wp_nav_menu_items", "bukaba_main_nav_menu_reroute", 10, 2);
-
+*/
 
 
 /**

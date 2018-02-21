@@ -9,7 +9,7 @@ jQuery(".slicknav").click(function($e) {
 
 jQuery(".down").click(function($e) {
       jQuery('html,body').animate({
-        scrollTop:jQuery('#primary').offset().top - 90}, 700);
+        scrollTop:jQuery('#primary').offset().top}, 700);
 }); 
 
 

@@ -4,7 +4,7 @@ Author: Zahra Ali
 Theme URI:
 Author URI:
 Description: Single Page Website Theme
-Version: 0.0.2
+Version: 0.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bukaba
@@ -455,10 +455,6 @@ input:hover {
 
 .comment-respond {
 	margin-bottom:5%;
-}
-
-#my-canvas {
-	transform: translate(-1%, 0%) rotate(-3deg);
 }
 
 
